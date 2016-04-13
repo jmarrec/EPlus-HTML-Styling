@@ -116,10 +116,50 @@ tr {
 
 
 /* My tocify settings */
-
+/* We anchor it to the top right corner */
 #toc {
- top: 1em;
+  top: 1em;
   right: 1em; 
+  background-color: #FFF;
+  
+}
+
+
+/* Tentative*/
+#toc-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  // max-width:230px;
+  width: 20%;
+  max-height: 90%;
+  overflow: auto;
+  border: 1px solid #ccc;
+  webkit-border-radius: 6px;
+  moz-border-radius: 6px;
+  border-radius: 6px;
+  padding:10px;
+  background-color: #fff;
+  opacity: .8;
+  z-index: 100;
+}
+
+
+#toc-wrapper.closed {
+  min-width: 100px;
+  width: auto;
+  transition: width;
+}
+#toc-wrapper:hover{
+  opacity: 1;
+}
+#toc-wrapper .header {
+  font-size: 18px;
+  font-weight: bold;
+}
+#toc-wrapper .hide-btn {
+  font-size: 14px;
+  font-family: monospace;
 }
 
 

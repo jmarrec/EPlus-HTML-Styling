@@ -12,7 +12,9 @@
   <!-- CSS for TOC -->
   <link rel="stylesheet" type="text/css" href="css/tocify/jquery.tocify.css">
   
-  <link rel="stylesheet" type="text/css" href="css/bootstap/bootstrap.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui/jquery-ui.css">
   
   
 </head>
@@ -21,9 +23,18 @@
 
 <body>
 
-  <h1>Table of contents</h1>
-  <div id="toc"></div>
-
+  <!-- Table of content -->
+  <div id='toc-wrapper'>
+    <div class="header">
+      Table of Contents
+      <a class="hide-btn" href="#" title="Hide ToC">[-]</a>
+    </div>
+  
+  
+    <div id="toc"></div>
+  </div>
+  
+  <!--<div id="toc"></div>-->
 
 
   
@@ -16093,19 +16104,40 @@
     //Executes your code when the DOM is ready.  Acts the same as $(document).ready().
     $(function() {
 
-            var toc = $("#toc").tocify({ selectors: "h2, h3, h4" }).data("toc-tocify");
-            prettyPrint();
-            $(".optionName").popover({ trigger: "hover" });
+            var toc = $("#toc").tocify({ selectors: "h1, h2, h3, h4" }).data("toc-tocify");
+
             
             toc.setOptions({ showEffect: "fadeIn",
                              scrollTo: 50,
                              smoothScroll: false,
-                             selectors: "h1,h2,h3" });
-
+                             theme: "jqueryui"  
+                             });
+                             
+                             
+            // Hide/Show toc
+            $("#toc-wrapper .header").click( function(){
+              $('#toc').slideToggle();
+              $('#toc-wrapper').toggleClass('closed');
+              if ($('#toc-wrapper').hasClass('closed')){
+                $('#toc-wrapper .hide-btn')
+                .text('[+]')
+                .attr('title', 'Show ToC');
+              } else {
+                $('#toc-wrapper .hide-btn')
+                .text('[-]')
+                .attr('title', 'Hide ToC');
+              }
+              return false;
+            });
+            
         });
     
     
-</script>
+  </script>
+  
+  <script>
+  
+  </script>
 
 
 

@@ -146,6 +146,7 @@ $(function() {
   };
 
   return {
+      
     load_ipython_extension : load_ipython_extension,
     toggle_toc : toggle_toc,
     table_of_contents : table_of_contents,

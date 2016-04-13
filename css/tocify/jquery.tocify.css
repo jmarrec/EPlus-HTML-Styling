@@ -6,7 +6,7 @@
 
  
 /* The Table of Contents container element */
-.tocify {
+/*.tocify {
     width: 20%;
     max-height: 90%;
     overflow: auto;
@@ -16,7 +16,7 @@
     webkit-border-radius: 6px;
     moz-border-radius: 6px;
     border-radius: 6px;
-}
+}*/
 
 /* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
 .tocify ul, .tocify li {
