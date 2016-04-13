@@ -1,0 +1,126 @@
+<style>
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #22262e;
+  overflow-x: hidden;
+  
+}
+
+
+/* Section titles */
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #E2231A; /* #1b1e24; */
+  font-variant: small-caps;
+  border-top: 1px solid #000;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #3e8ddd; /* #1b1e24; */
+  font-variant: small-caps;
+}
+
+
+
+/* STYLING TABLES */
+
+/* Align center, and give the min and max width */
+table { 
+    text-align: center;
+}
+
+
+/* Set column maximum width */
+table th,
+table td
+{
+    width: 200px;
+}
+
+/* Except the first column (index) */
+
+/* Set column maximum width */
+table th:first-child,
+table td:first-child
+{
+    min-width: 350px;
+}
+
+
+/* Apply to each regular row: border style, and center vertically  */
+tr > th,
+tr > td, {
+  border-color: #E5E5E5;
+  border-width: 1px;
+  vertical-align: middle;
+
+  }
+
+
+/* Formatting of the header */
+thead > tr {
+  background: #f1f5f9;
+  color: #56688A;
+  font-size: 16px; /* MY EDIT */
+  line-height: 30px;
+}
+
+
+
+/* Format even and odd rows (for table body only) differently */
+table > tbody > tr:nth-child(odd) {
+  background: #F8FAFC;
+}
+
+table > tbody > tr:nth-child(even) {
+  background: #FFFFFF;
+}
+
+
+/* Special styling for total row */
+table > tbody > tr.total {
+    // background: #FF4F49;
+    color: #E2231A;
+
+}
+table > tbody > tr.total > td {
+    border-top: 3px double #E5E5E5;
+}
+
+/* Highlight current row */
+tr:hover td {
+    background-color: #FFFF99;
+}
+
+/* Line heigh */
+td {
+    line-height: 20px;
+}
+
+
+/* The first column is the index, and should have emphasis */
+tr > td:first-child {
+    font-weight: bold;
+}
+
+
+tr {
+    padding: 8px 5px;
+}
+
+
+/* My tocify settings */
+
+#toc {
+ top: 1em;
+  right: 1em; 
+}
+
+
+</style>
