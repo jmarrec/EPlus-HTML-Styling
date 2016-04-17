@@ -60,6 +60,7 @@
 
 
   <!-- Proper html tagging of a table, with a header clearly defined -->
+  <!-- The first column is the index, as such it also has th tag -->
   <!-- FullName:Annual Building Utility Performance Summary_Entire Facility_Site and Source Energy-->
   <table>
     <thead>
@@ -72,7 +73,7 @@
     </thead>
     <tbody>
         <tr>
-          <td>Total Site Energy</td>
+          <th>Total Site Energy</th>
           <td>24388.71</td>
           <td>526.52</td>
           <!-- Do not artifically include spaces in the cell please -->
@@ -80,19 +81,19 @@
           <td>526.52</td>
         </tr>
         <tr>
-          <td>Net Site Energy</td>
+          <th>Net Site Energy</th>
           <td>24388.71</td>
           <td>526.52</td>
           <td>526.52</td>
         </tr>
         <tr>
-          <td>Net Site Energy</td>
+          <th>Net Site Energy</th>
           <td>79027.18</td>
           <td>1706.10</td>
           <td>1706.10</td>
         </tr>
         <tr>
-          <td>Net Source Energy</td>
+          <th>Net Source Energy</th>
           <td>79027.18</td>
           <td>1706.10</td>
           <td>1706.10</td>
@@ -113,55 +114,55 @@
     
     <tbody>
         <tr>
-          <td>Electricity</td>
+          <th>Electricity</th>
           <td>3.576</td>
         </tr>
         <tr>
-          <td>Natural Gas</td>
+          <th>Natural Gas</th>
           <td>1.092</td>
         </tr>
         <tr>
-          <td>District Cooling</td>
+          <th>District Cooling</th>
           <td>0.856</td>
         </tr>
         <tr>
-          <td>District Heating</td>
+          <th>District Heating</th>
           <td>1.647</td>
         </tr>
         <tr>
-          <td>Steam</td>
+          <th>Steam</th>
           <td>0.585</td>
         </tr>
         <tr>
-          <td>Gasoline</td>
+          <th>Gasoline</th>
           <td>1.050</td>
         </tr>
         <tr>
-          <td>Diesel</td>
+          <th>Diesel</th>
           <td>1.050</td>
         </tr>
         <tr>
-          <td>Coal</td>
+          <th>Coal</th>
           <td>1.050</td>
         </tr>
         <tr>
-          <td>Fuel Oil #1</td>
+          <th>Fuel Oil #1</th>
           <td>1.050</td>
         </tr>
         <tr>
-          <td>Fuel Oil #2</td>
+          <th>Fuel Oil #2</th>
           <td>1.050</td>
         </tr>
         <tr>
-          <td>Propane</td>
+          <th>Propane</th>
           <td>1.050</td>
         </tr>
         <tr>
-          <td>Other Fuel 1</td>
+          <th>Other Fuel 1</th>
           <td>1.000</td>
         </tr>
         <tr>
-          <td>Other Fuel 2</td>
+          <th>Other Fuel 2</th>
           <td>1.000</td>
         </tr>
     </tbody>
@@ -199,12 +200,14 @@
 
   <h2>End Uses</h2>
   <!-- FullName:Annual Building Utility Performance Summary_Entire Facility_End Uses-->
-  <table>
-    
+  
+  <div id="chartdiv_end-uses"></div>
+
+  <table id='end-uses' class='barchart'>
     <thead>
         <tr>
           <th></th>
-          <th>>Electricity [GJ]</th>
+          <th>Electricity [GJ]</th>
           <th>Natural Gas [GJ]</th>
           <th>Additional Fuel [GJ]</th>
           <th>District Cooling [GJ]</th>
@@ -214,7 +217,7 @@
     <thead>
     <tbody>  
         <tr>
-          <td>Heating</td>
+          <th>Heating</th>
           <td>0.00</td>
           <td>3071.84</td>
           <td>0.00</td>
@@ -223,7 +226,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Cooling</td>
+          <th>Cooling</th>
           <td>2125.94</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -232,7 +235,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Interior Lighting</td>
+          <th>Interior Lighting</th>
           <td>5636.33</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -241,7 +244,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Exterior Lighting</td>
+          <th>Exterior Lighting</th>
           <td>805.25</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -250,7 +253,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Interior Equipment</td>
+          <th>Interior Equipment</th>
           <td>8383.98</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -259,7 +262,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Exterior Equipment</td>
+          <th>Exterior Equipment</th>
           <td>1895.08</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -268,7 +271,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Fans</td>
+          <th>Fans</th>
           <td>570.51</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -277,7 +280,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Pumps</td>
+          <th>Pumps</th>
           <td>1086.36</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -286,7 +289,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Heat Rejection</td>
+          <th>Heat Rejection</th>
           <td>589.43</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -295,7 +298,7 @@
           <td>12632.41</td>
         </tr>
         <tr>
-          <td>Humidification</td>
+          <th>Humidification</th>
           <td>0.00</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -304,7 +307,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Heat Recovery</td>
+          <th>Heat Recovery</th>
           <td>0.00</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -313,7 +316,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Water Systems</td>
+          <th>Water Systems</th>
           <td>0.00</td>
           <td>223.99</td>
           <td>0.00</td>
@@ -322,7 +325,7 @@
           <td>1504.13</td>
         </tr>
         <tr>
-          <td>Refrigeration</td>
+          <th>Refrigeration</th>
           <td>0.00</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -331,7 +334,7 @@
           <td>0.00</td>
         </tr>
         <tr>
-          <td>Generators</td>
+          <th>Generators</th>
           <td>0.00</td>
           <td>0.00</td>
           <td>0.00</td>
@@ -341,7 +344,7 @@
         </tr>
         <!-- Here instead of having a blank line, we tag it with a class -->
         <tr class="total">
-          <td>Total End Uses</td>
+          <th>Total End Uses</th>
           <td>21092.88</td>
           <td>3295.83</td>
           <td>0.00</td>
@@ -530,6 +533,9 @@
     </tr>
     </tbody>
   </table>
+  
+  
+  
   <br><br>
   <h2>Normalized Metrics</h2>
   <h3>Utility Use Per Conditioned Floor Area</h3>
@@ -3041,7 +3047,7 @@
     </tr>
     </tbody>
   </table>
-
+  
   
   
   <h2>Interior Fenestration</h2>
